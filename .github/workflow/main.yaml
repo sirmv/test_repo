@@ -3,7 +3,7 @@ name: Test of Upload artifacts action
 on: 
   push:
     branches:
-    - main
+    - 'main'
 
 jobs:
   Upload file:

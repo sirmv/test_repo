@@ -19,3 +19,12 @@ jobs:
       with:
         name: my-artifact
         path: path/to/artifact/world.txt
+  
+    - uses: actions/checkout@v3
+
+    - uses: actions/download-artifact@v3
+      with:
+        name: my-artifact
+    
+    - name: Display structure of downloaded files
+      run: ls -R
